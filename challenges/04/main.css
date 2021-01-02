@@ -1,8 +1,19 @@
 /* Use flexbox to display all divs in a row at the bottom of the container. Make the divs only take up one line */
 
+* {
+    box-sizing: border-box;
+}
+
+
+/* exerc.4 solution */
 body {
     height: 800px;
     border: 5px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 div {
